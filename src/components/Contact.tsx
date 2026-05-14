@@ -14,18 +14,18 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 px-6 bg-card">
       <div className="max-w-2xl mx-auto text-center">
-        <span className="text-sm uppercase tracking-widest text-muted-foreground mb-4 block">Начните</span>
+        <span className="text-sm uppercase tracking-widest text-muted-foreground mb-4 block">Контакты</span>
         <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground mb-6 text-balance">
-          Готовы обрести покой?
+          Хотите узнать больше?
         </h2>
         <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
-          Присоединяйтесь к тысячам людей, открывших спокойный подход к работе. Оставьте email — мы поможем начать.
+          Если вы подросток, родитель, педагог или представитель организации — напишите нам. Мы расскажем о программе и ответим на ваши вопросы.
         </p>
 
         {submitted ? (
           <div className="p-8 rounded-2xl bg-sage/10 border border-sage/20">
-            <p className="text-foreground font-serif text-2xl mb-2">Добро пожаловать в Hvile</p>
-            <p className="text-muted-foreground">Проверьте почту — мы отправили следующие шаги.</p>
+            <p className="text-foreground font-serif text-2xl mb-2">Спасибо за обращение!</p>
+            <p className="text-muted-foreground">Мы свяжемся с вами в ближайшее время.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -41,7 +41,7 @@ export function Contact() {
               type="submit"
               className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity duration-300 whitespace-nowrap"
             >
-              Начать путь
+              Написать нам
             </button>
           </form>
         )}

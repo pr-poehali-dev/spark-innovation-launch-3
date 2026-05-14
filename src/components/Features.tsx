@@ -1,25 +1,25 @@
-import { Clock, Layers, Moon, Sparkles } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const features = [
   {
-    icon: Clock,
-    title: "Неспешное планирование",
-    description: "Тайм-блоки, которые уважают ваши естественные ритмы. Между задачами всегда есть время на паузу.",
+    icon: "HandHeart",
+    title: "Индивидуальное сопровождение",
+    description: "Каждый подросток получает персональное внимание. Специалисты учитывают уникальную ситуацию и помогают найти подходящий путь.",
   },
   {
-    icon: Layers,
-    title: "Фокус на текущем",
-    description: "Видите только то, что важно сейчас. Остальное терпеливо ждёт, пока вы будете готовы.",
+    icon: "BookOpen",
+    title: "Образование и навыки",
+    description: "Программы, которые помогают развить уверенность в себе, освоить важные жизненные навыки и открыть новые возможности.",
   },
   {
-    icon: Moon,
-    title: "Часы тишины",
-    description: "Автоматические периоды покоя, которые защищают ваше время глубокой работы от отвлечений.",
+    icon: "Users",
+    title: "Для родителей и специалистов",
+    description: "Информация, ресурсы и поддержка для тех, кто рядом — родителей, педагогов и социальных работников.",
   },
   {
-    icon: Sparkles,
-    title: "Мягкая аналитика",
-    description: "Вдумчивые наблюдения за вашими паттернами — без осуждения, с поддержкой.",
+    icon: "TrendingUp",
+    title: "Результаты и истории",
+    description: "Реальные истории изменений и измеримые результаты проекта — прозрачность как основа доверия.",
   },
 ];
 
@@ -28,9 +28,9 @@ export function Features() {
     <section id="features" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <span className="text-sm uppercase tracking-widest text-terracotta mb-4 block">Возможности</span>
+          <span className="text-sm uppercase tracking-widest text-terracotta mb-4 block">Направления</span>
           <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground text-balance">
-            Инструменты, дарящие покой
+            Как проект помогает
           </h2>
         </div>
 
@@ -41,7 +41,7 @@ export function Features() {
               className="group p-8 md:p-10 rounded-2xl bg-card border border-border hover:border-sage/30 transition-colors duration-500"
             >
               <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6 group-hover:bg-sage/20 transition-colors duration-500">
-                <feature.icon size={24} className="text-sage" />
+                <Icon name={feature.icon} size={24} className="text-sage" />
               </div>
               <h3 className="font-serif text-2xl text-foreground mb-3">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
