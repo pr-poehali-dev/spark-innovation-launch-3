@@ -26,6 +26,12 @@ export function Header() {
             Направления
           </a>
           <a
+            href="#tips"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+          >
+            Советы
+          </a>
+          <a
             href="#pricing"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
           >
@@ -73,6 +79,13 @@ export function Header() {
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Направления
+            </a>
+            <a
+              href="#tips"
+              onClick={() => setIsOpen(false)}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Советы
             </a>
             <a
               href="#pricing"

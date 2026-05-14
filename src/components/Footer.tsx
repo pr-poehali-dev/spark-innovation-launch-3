@@ -16,6 +16,9 @@ export function Footer() {
             <a href="#features" className="hover:text-foreground transition-colors duration-300">
               Направления
             </a>
+            <a href="#tips" className="hover:text-foreground transition-colors duration-300">
+              Советы
+            </a>
             <a href="#pricing" className="hover:text-foreground transition-colors duration-300">
               Для кого
             </a>
