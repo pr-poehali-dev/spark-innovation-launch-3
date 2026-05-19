@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Простой вопрос подростка",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "messages": [
+          { "role": "user", "content": "Меня поставили на учёт, что теперь будет?" }
+        ]
+      },
+      "expectedStatus": 200,
+      "expectedBody": { "reply": "string" },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
